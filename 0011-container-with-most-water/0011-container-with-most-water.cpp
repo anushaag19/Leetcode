@@ -9,7 +9,11 @@ public:
             int h = min(height[r],height[l]);
             int area = w * h;
             ans = max(area,ans);
-            height[l]<height[r] ? l++ : r--;
+            if (height[l]<height[r]){
+                l++;
+            
+            
+            }else{r--;}
         }
         return ans;
         
